@@ -2,10 +2,12 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ESV Reader's Bible </title>
+	<title>Reader's Bible Online</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+		<link href='css/main.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header></header>
@@ -15,6 +17,9 @@
 		<!-- Book text goes here -->
 			
 	</select>
-	<div id="book_text"></div>
+	<div class="container-fluid">
+	<div id="book-text" class="col-lg-6"></div>
+	<div id="book-text-2" class="col-lg-6"></div>
+	</div>
 </body>
 </html>

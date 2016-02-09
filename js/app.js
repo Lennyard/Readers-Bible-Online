@@ -16,16 +16,19 @@ function getRequest(searchTerm) {
 		url = 'http://getbible.net/json?callback=?';
 		
 		$.getJSON(url, params, function(data){
-			var html = " ";
+			var html = "";
+			var html1 ="";
 			//grab each book
 			$.each(data.book, function(index, value){
 				//grab each chapter and verse
 				$.each(value.chapter, function(index, value){
+					console.log(value);
+					//if(index.verse )
 					html += value.verse + " "; 
 				});
 			});
 			
-			$("#book_text").append(html);
+			$("#book-text").html(html);
 		});
 	}
 
