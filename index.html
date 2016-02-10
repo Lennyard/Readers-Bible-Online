@@ -3,23 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Reader's Bible Online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 		<link href='css/main.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header></header>
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+    <a class="navbar-brand" href="#">Reader's Bible</a>
+    <div class="btn-group">
+  <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select Book <span class="caret"></span>
+  </button>
+	<ul class="books dropdown-menu">
 	
-	<select class="books">
-		<option disabled selected>Select Book</option>
+		
 		<!-- Book text goes here -->
 			
-	</select>
-	<div class="container-fluid">
-	<div id="book-text" class="col-lg-6"></div>
-	<div id="book-text-2" class="col-lg-6"></div>
+	</ul>
 	</div>
+	<div class="container-fluid">
+	<div id="book-text"></div>
+	
+	</div>
+    </div>
+    </div>
+	</nav>
+	
 </body>
 </html>

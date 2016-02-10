@@ -1,8 +1,8 @@
 $(function(){
 	populateBooks();
 	// Sends AJAX request when drop down is changed
-	$(".books").change(function(){	
-		var searchTerm = $(".books").val();
+	$(".books").on("click", "a", function(){	
+		var searchTerm = $(this).text();
 		getRequest(searchTerm);
 		
 		});
@@ -42,7 +42,7 @@ function populateBooks(){
 		$.getJSON(url, params, function(data){
 			var books = "";
 			$.each(data.version, function(index, value){
-				books += "<option>" + data.version[index].book_name + "</option>"
+				books += "<li><a href='#'>" + data.version[index].book_name + "</a></li>"
 			});
 
 			$(".books").append(books);
