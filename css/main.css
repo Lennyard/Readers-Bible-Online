@@ -1,1 +1,15 @@
 #book-text, #book-text-2 {font-family: 'Vollkorn', serif; padding: 2%; }
+
+#book-title {
+	margin-top: 0;
+	font-size: 3.8em;
+	font-weight: bold;
+	text-align: center;
+}
+.selected { background-color: #FFEB3B; }
+
+@media (max-width: 415px) {
+	#book-title {
+		margin-top: -10%;
+	}
+}
