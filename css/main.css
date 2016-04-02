@@ -30,7 +30,17 @@
 		margin-top: -10%;
 	}
 }*/
-@media (min-width: 417px) {
+
+@media (min-width: 769px) {
+	body {
+		width:70%;
+		margin: 0 auto;
+	}
+	.dropdown-menu {
+		left:0;
+	}
+
+@media (min-width: 1025px) {
 	body {
 		width:50%;
 		margin: 0 auto;
