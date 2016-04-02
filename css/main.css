@@ -1,3 +1,50 @@
-#book-text, #book-text-2 {font-family: 'Vollkorn', serif; text-align: right;}
+.navbar-brand {
+	display: block;
+	text-align: center;
+	clear: both;
+	float: none;
+	font-size: 1.5em;
+	font-weight: bold;
+}
 
-select.books {width: 122px;}
+.button-group{
+	margin: 0 auto;
+}
+
+
+.dropdown-menu {
+	left: 15%;
+}
+#book-text, #book-text-2 {font-family: 'Vollkorn', serif; padding: 2%; }
+
+#book-title {
+	margin-top: 0;
+	font-size: 3.8em;
+	font-weight: bold;
+	text-align: center;
+}
+.selected { background-color: #FFEB3B; }
+
+/*@media (max-width: 415px) {
+	#book-title {
+		margin-top: -10%;
+	}
+}*/
+
+@media (min-width: 769px) {
+	body {
+		width:70%;
+		margin: 0 auto;
+	}
+	.dropdown-menu {
+		left:0;
+	}
+
+@media (min-width: 1025px) {
+	body {
+		width:50%;
+		margin: 0 auto;
+	}
+	.dropdown-menu {
+		left:0;
+	}

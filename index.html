@@ -3,23 +3,73 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Reader's Bible Online</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/app.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/js.cookie.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
 		<link href='css/main.css' rel='stylesheet' type='text/css'>
+		<link rel='shortcut icon' type='image/x-icon' href='favicon.ico'/>
 </head>
 <body>
-	<header></header>
+	<nav class="navbar navbar-default text-center">
+		<div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <div class="navbar-header">
+    <a class="navbar-brand" href="#">Reader's Bible Online</a>
+    <div class="button-group text-center">
+  	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Select Book <span class="caret"></span>
+  	</button>
+		<ul class="books dropdown-menu">
 	
-	<select class="books">
-		<option disabled selected>Select Book</option>
+		
 		<!-- Book text goes here -->
 			
-	</select>
-	<div class="container-fluid">
-	<div id="book-text" class="col-lg-6"></div>
-	<div id="book-text-2" class="col-lg-6"></div>
+		</ul>
+	
+	<button class="bookmark btn btn-primary"><i class="fa fa-bookmark" title="your bookmark"></i> My Bookmark</button>
 	</div>
+	<div class="container-fluid">
+	
+    </div>
+    </div>
+	</nav>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Reader's Bible -->
+		<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-1854329900013326"
+	     data-ad-slot="5972828293"
+	     data-ad-test="on"
+	     data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+	<h2 id="book-title"></h2>
+
+	<div id="book-text"></div>
+	<div class="jumbotron" id="starter text">
+	<h2>Hi! To get started, select a book above or click on the bookmark button to go to your last saved bookmark</h2>
+	<div style="margin-left: 15%">
+	<button class="creator btn btn-primary">Who made this?</button>
+	<button class="how-bookmark btn btn-primary">How to bookmark</button>
+	</div>
+	<p>* We use cookies to save your bookmarks.</p>
+	<article class="for-creator" style="display: none;">
+		<span>Sako Kassabian, President of Ankas Studios, is a Sourthern California based developer. He enjoys front end design and also gets his hands dirty with UX. This app was created so that the Bible can also be enjoyed in its original way. Reading it as we would a novel. In some cases, like mine, the chapters and verses can sometimes get in the way. I hope you enjoy this app. If you have any questions/comments/concerns you can email me - sakokassabian[at]gmail.com </span>
+	</article>
+	<article class="for-bookmark" style="display: none;">
+		<span>Ok so you're a hotshot and decide to hit up Exodus. After 35 min you want to take a break. But wait... there aren't any chapters or verses... hmmm... Well, just click on the verse! Say Ok and the next time you return, just click on the bookmark button above!</span>
+	</article>
+	</div>
+	
+
+	
+	<footer></footer>
 </body>
 </html>
