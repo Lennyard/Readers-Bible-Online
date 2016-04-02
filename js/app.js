@@ -96,13 +96,13 @@ function getBookmark() {
 		var v = Cookies.get("saved-verse");
 		
 		populateText(b);
-		console.log(v);
 
 		setTimeout(function(){
 			$('html, body').animate({
 	        scrollTop: $("span[data-verse='"+ v + "']").offset().top - 75
 	    	});
 		}, 2000);
+		
 		setTimeout(function(){
 			$("span[data-verse='"+ v + "']").addClass("selected");
 		}, 2500);

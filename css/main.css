@@ -1,3 +1,17 @@
+.navbar-brand {
+	display: block;
+	text-align: center;
+	clear: both;
+	float: none;
+}
+
+.dropdown-toggle {
+	margin-left: 15%;
+}
+
+.dropdown-menu {
+	left: 15%;
+}
 #book-text, #book-text-2 {font-family: 'Vollkorn', serif; padding: 2%; }
 
 #book-title {
@@ -8,7 +22,7 @@
 }
 .selected { background-color: #FFEB3B; }
 
-@media (max-width: 415px) {
+/*@media (max-width: 415px) {
 	#book-title {
 		margin-top: -10%;
 	}
