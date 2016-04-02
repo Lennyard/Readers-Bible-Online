@@ -5,9 +5,10 @@
 	float: none;
 }
 
-.dropdown-toggle {
-	margin-left: 15%;
+.button-group{
+	margin: 0 auto;
 }
+
 
 .dropdown-menu {
 	left: 15%;
