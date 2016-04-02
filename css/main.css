@@ -25,14 +25,12 @@
 }
 .selected { background-color: #FFEB3B; }
 
-.ad {
+
+@media (max-width: 415px) {
+	.ad {
 	margin-bottom: -10%;
 }
-/*@media (max-width: 415px) {
-	#book-title {
-		margin-top: -10%;
-	}
-}*/
+}
 
 @media (min-width: 769px) {
 	body {
